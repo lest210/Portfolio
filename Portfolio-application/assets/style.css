@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Lora', serif;
     font-family: 'Montserrat', sans-serif;
@@ -6,20 +10,28 @@ body {
     background-color: grey;
     color: White;
    }
+
+header{
+    border-bottom: 2px solid white;
+    padding: 20px 0;
+    background-color: black;
+}
    
 header h1{
     font-weight: bold;
-    font-size: 48px;
-    text-align: center;
+    font-size: 30px;
+
 }
 
 header a{
     text-decoration: none;
     color: white;
+    
 }
 
 header nav{
-    margin: 7px 0;
+    margin: -60px 0;
+    float:right;
 }
 
 header nav ul{
@@ -28,43 +40,50 @@ header nav ul{
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    border-bottom: 2px solid white;
 }
 
 header nav ul li a{
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.5vw;
-
+    
 }
 
 .subtitle{
-    position:relative;
-}
-
-.background-image{
-    background-image: url(../assets/images/subtitle-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    padding: 8em;
-}
-
-.sub-text{
-    text-align: right;
-}
-
-.about-me{
-
+    float:right;
+    margin: 20% 50%;
 }
 
 .about-me h2{
-    float: left;
-    padding: 20em;
+    float:left;
+    border-right: 3px solid black;
+    margin: 5% 15% 0 0;
 }
 
 .about-me p{
-    width: 20em;
+    font-size: 18px;
+    margin: 12px 0 12px 65%;
+}
+
+.work h2{
+    float:left;
+    border-right: 3px solid black;
+    margin: 5% 15% 0 0;
+}
+
+.run-buddy{
 
 }
 
- 
+.run-buddy img{
+    max-width: 85%;
+    float:right;
+    
+}
+
+.contact-me h2{
+    float:left;
+    border-right: 3px solid black;
+    margin: 5% 15% 0 0;
+}
