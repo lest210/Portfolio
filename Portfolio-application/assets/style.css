@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    flex-basis: 50%;
 }
 
 body {
@@ -9,6 +10,8 @@ body {
     text-transform: uppercase;
     background-color: grey;
     color: White;
+    display: flex;
+    flex-flow: column wrap;
    }
 
 header{
@@ -50,35 +53,30 @@ header nav ul li a{
     
 }
 
-.subtitle{
-    float:right;
-    margin: 20% 50%;
+
+
+
+section h2{
+    flex-basis: 50%;
 }
 
-.about-me h2{
-    float:left;
-    border-right: 3px solid black;
-    margin: 5% 15% 0 0;
-}
+
 
 .about-me p{
-    font-size: 18px;
-    margin: 12px 0 12px 65%;
+   flex-basis: 50%;
 }
 
 .work h2{
-    float:left;
-    border-right: 3px solid black;
-    margin: 5% 15% 0 0;
+    flex-basis: 20%;
 }
 
 .run-buddy{
-
+    justify-content: flex-end;
 }
 
 .run-buddy img{
-    max-width: 85%;
-    float:right;
+    max-width: 50%;
+    
     
 }
 
@@ -86,4 +84,41 @@ header nav ul li a{
     float:left;
     border-right: 3px solid black;
     margin: 5% 15% 0 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.about-me{
+    flex-basis: fl;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container2{
+    flex-basis: 50%;
+    flex-flow: column wrap;
+    display: flex;
+    align-items: baseline;
+}
+
+.container3{
+    display:flex;
+    flex-flow: column;
+}
+
+.container4{
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+.robot-gladiators{
+    height: 10px;
+
 }
