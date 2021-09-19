@@ -1,96 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="assets/style.css" />
-    </head>
-    <body>
-        <!--Header and Navigation-->
-        <header>
-            <h1>Lester's Portfolio</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Khula" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Lester Calderon</title>
+</head>
 
-           <!--Hero--> 
-           <section class="subtitle">
-               <div class="background-image"></div>
-               <div class="sub-text">
-               <h3>Subtitle</h3>
-               </div>
-           </section>
+<body>
+    <header>
+        <span class="span-background title"> 
+            <h1>Lester Calderon</h1>
+        </span>
+        <nav>
+            <ul class="nav-effects"> 
+                <li>
+                    
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+                <li> 
+                    <a href= >Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-           <!--About me section-->
-           <div class="container">
-           <section class="about-me">
-               <h2>About Me</h2>
-               <p>I am currently a paint contractor. I went to school to learn coding. unfortunelty, the school closed before I could finish.
-            that's when I went back to construction. I want to be able have more home time, and I also love web development.</p>
-           </section>
+    <section class="hero">
+        <div class="hero-subtitle">           
+                <span class="span-background opacity">Portfolio</span>
+        </div>
+    </section>
 
-           <!--Work section-->
-           <section class="work">
-               <div class="container">
-               <h2>Work</h2>
-               </div>      
-               <div class=container2>
-                <div class="run-buddy">
-                    <img src="assets/images/run-buddy-pic.jpeg" alt="People Running" />
+    
+    <article> 
+        <div id="about-me" class="about-me-wrapper"> 
+            <div class="about-me-grid-container"> 
+                <div class="about-me-item about-me-title"> 
+                    <p> About me </p>
                 </div>
-<div class="container3">
-    <div class="container4">
-                <div class="robot-gladiators">
-                    <img src="assets/images/coming-soon-pic.jpeg" alt="coming soon" />
-                    <h4>Robot Gladiators</h4>
+                <div class="about-me-item p1">
+                    <p>I enrolled in this bootcamp to be able to do a career change and be able to spend more time with my family. I have always loved web development and want to continue to do it at a professional level.</p>
+                </div>
+                <div class="about-me-item p2">
+                    <p>I am currently a Paint contractor. My work consist of talking to customer, planning, and executing work as a team.</p>
+                </div>  
+            </div>
+        </div> 
+    </article>
+
+    
+    <article>
+        <div id="work" class="work-wrapper"> 
+            <div class="work-grid-container"> 
+                <div class="work-item work-title"> 
+                    <p> Work </p>
+                </div>
+                <div onclick="projectClicked('challenge-1-refactor')" alt="Image Displaying the Horiseon landing Page" title="Horiseon landing Page" target="_blank" style="cursor: pointer;" class="work-item-project challenge-1-refactor">
+                    <span class="span-background"> 
+                        <h3>Horiseon Services</h3>
+                        <span class="lower-text">HTML/CSS</span> 
+                    </span>
+                </div>
+                
+                <div onclick="projectClicked('run-buddy')" alt="Image Displaying the RUN BUDDY landing Page" title="RUN BUDDY landing page" style="cursor: pointer;" class="work-item-project run-buddy">
+                    <span class="span-background">
+                        <h3>Run Buddy</h3>
+                        <span class="lower-text">HTML/CSS</span>
+                    </span>
+                </div>
+                <div onclick="projectClicked('password-generator')" alt="Image Displaying the Password Generator landing Page" title="Password Generator landing page" style="cursor: pointer;" class="work-item-project password-generator">
+                    <span class="span-background">
+                        <h3>Password Generator</h3>
+                        <span class="lower-text">CSS/Javascript</span>
+                    </span>
+                </div>
+                <div onclick="projectClicked('javascript-quiz')" alt="Image Displaying the Javascript Code Quiz landing Page" title="Javascript Quiz landing page" style="cursor: pointer;" class="work-item-project javascript-quiz">
+                    <span class="span-background">
+                        <h3>Javascript Quiz</h3>
+                        <span class="lower-text">Javascript/CSS/LocalStorage</span>
+                    </span>
+                </div>
+                <div onclick="projectClicked('work-day-scheduler')" alt="Image Displaying the Web Api Code Quiz landing Page" title="Web Api Code Quiz landing page" style="cursor: pointer;" class="work-item-project work-day-scheduler">
+                    <span class="span-background">
+                        <h3>Work Day Scheduler</h3>
+                        <span class="lower-text">Dynamic Javascript/Bootstrap</span>
+                    </span>
+                </div>
+                <div onclick="projectClicked('project01')" alt="Image Displaying the Project01 landing Page" title="Project01 landing page" style="cursor: pointer;" class="work-item-project project01">
+                    <span class="span-background">
+                        <h3>Project01</h3>
+                        <span class="lower-text">HTML/CSS/Javascript</span>
+                    </span>
                 </div>
 
-                <div class="coming-soon">
-                    <img src="assets/images/coming-soon-pic.jpeg" alt="Coming Soon" />
-                    <h4>Coming Soon</h4>
-                </div>
-    </div>
+                
 
-    <div class="container4">
-                <div class="coming-soon-2">
-                     <img src="assets/images/coming-soon-pic.jpeg" alt="Coming Soon" />
-                     <h4>Coming Soon</h4>
-                </div>
 
-                <div class="coming-soon-3">
-                    <img src="assets/images/coming-soon-pic.jpeg" alt="Coming Soon" />
-                    <h4>Coming Soon</h4>
+                <div class="work-item-project ghost-item">
+                    <span class="span-background">
+                        <h3>Coming soon!</h3>
+                        <span class="lower-text">TBD</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </article>
 
+
+    <footer>
+        <div id="contact-me" class="footer-wrapper"> 
+            <div class="footer-container"> 
+                
+                <div class="footer-grid-item contact-me"> 
+                    Contact Me
                 </div>
- </div>                
+                <div class="footer-grid-item phone">
+                    <a href="tel:555-555-5555" class="nav-effects">555-555-5555</a>
                 </div>
+                <div class="footer-grid-item email"> 
+                    <a href="mailto:lest210@gmail.com">lest210@gmail.com</a>
                 </div>
-           </section>
-           </div>
-           <!--Contact Me section-->
-            <section class="contact-me">
-                 <h2>Contact Me</h2>
-                 <p>
-                  <address>
-                   55 Main Street </br>
-                   Somewhere </br>
-                   P: 555.555.555 </br>
-                   Git: <a href="https://www.github.com/lest210">GitHub Link</a>
-                  </address>
-                 </p>
-             </section>
-    </body>
+                <div class="footer-grid-item git-hub"> 
+                    <a href="https://github.com/lest210/" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script> 
+        function projectClicked(input) { 
+            var input = input; 
+    
+            if (input == "challenge-1-refactor") { 
+                window.open("https://lest210.github.io/code-refactor/");
+            } else if (input == "run-buddy") {
+                window.open("https://lest210.github.io/run-buddy/");
+            } else if (input == 'password-generator') {
+                window.open("https://lest210.github.io/pw-generator/");
+            } else if (input == 'javascript-quiz') {
+                window.open("https://lest210.github.io/Javascript-quiz/");
+            }  else if (input == 'work-day-scheduler') {
+                window.open("https://lest210.github.io/work-day-scheduler/");
+            } else if (input == 'project01') {
+                window.open("https://twyllblackleaf.github.io/live-music-search/");
+            } else {
+                return true; 
+            }
+        };
+            
+    </script>
+</body>
 </html>
