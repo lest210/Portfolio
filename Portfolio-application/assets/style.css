@@ -541,7 +541,7 @@ footer a {
     text-align: center;
   }
   
-  .work-item-project.web-api-code-quiz {
+  .work-item-project.javascript-quiz {
     grid-column: 1 /span 3;
     grid-row: 8 / span 1;
     background-position: scroll;
@@ -555,7 +555,7 @@ footer a {
     text-align: center;
   }
 
-  .work-item-project.project01-group07  {
+  .work-item-project.project01  {
     grid-column: 1 /span 3;
     grid-row: 10 / span 1;
     align-items: flex-end;
